@@ -10,16 +10,36 @@ import SwiftUI
 struct CharacterView: View {
     
     var character: Character
-    var imageLoader: AsyncImageLoader?
     
-    init(character: Character) {
-        self.character = character
-        if let image = character.image {
-            self.imageLoader = try? AsyncImageLoader(urlString: image)
-        }
-    }
     var body: some View {
-        
+        VStack {
+            let placeHolder = Image(systemName: "person")
+            let url = URL(string: character.image ?? "")!
+            AsyncWebImageView(url: url, placeHolder: placeHolder)
+            VStack {
+                    Text(character.name ?? "")
+                        .font(.system(size: 16, weight: .bold))
+                        .frame(maxWidth: .infinity, alignment: .center)
+                VStack {
+                    HStack {
+                        Circle()
+                            .fill(character.status == .Alive ? Color.green : Color.red)
+                            .frame(width: 10, height: 10, alignment: .center)
+                        Text(character.location?.name ?? "Unknown")
+                            .font(.system(size: 12))
+                            .frame(alignment: .center)
+                    }
+                    HStack {
+                        Circle()
+                            .fill(Color.gray)
+                            .frame(width: 10, height: 10, alignment: .center)
+                            Text(character.species?.rawValue ?? "Unknown")
+                            .font(.system(size: 12))
+                            .frame(alignment: .center)
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -31,10 +51,10 @@ struct CharacterView_Previews: PreviewProvider {
         species: Species.Human,
         type: "",
         gender: Gender.Male,
-        origin: Location(name: "Earth (C-137)",
+        origin: Location(name: "Earth (Replacement Earth)",
                          url: "https://rickandmortyapi.com/api/location/1"
                        ),
-        location: Location(name: "Earth (C-137)",
+        location: Location(name: "Earth (Replacement Earth)",
                            url: "https://rickandmortyapi.com/api/location/1"
                          ),
         image: "https://rickandmortyapi.com/api/character/avatar/1.jpeg",

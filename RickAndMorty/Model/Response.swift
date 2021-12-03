@@ -38,6 +38,7 @@ struct Character: Decodable, Identifiable {
 enum Gender: String, Decodable {
     case Female
     case Male
+    case Genderless
     case unknown
 }
 
@@ -50,6 +51,13 @@ struct Location: Decodable {
 enum Species: String, Decodable {
     case Alien
     case Human
+    case Humanoid
+    case Poopybutthole
+    case Mythological = "Mythological Creature"
+    case Robot
+    case Animal
+    case Cronenberg
+    case unknown
 }
 
 enum Status: String, Decodable {

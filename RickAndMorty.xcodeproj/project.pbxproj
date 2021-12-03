@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B92CFEAE2700D71900BC46C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92CFEAD2700D71900BC46C7 /* AppDelegate.swift */; };
 		B92CFEB02700D71900BC46C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92CFEAF2700D71900BC46C7 /* SceneDelegate.swift */; };
-		B92CFEB22700D71900BC46C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92CFEB12700D71900BC46C7 /* ContentView.swift */; };
+		B92CFEB22700D71900BC46C7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92CFEB12700D71900BC46C7 /* HomeView.swift */; };
 		B92CFEB42700D71C00BC46C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B92CFEB32700D71C00BC46C7 /* Assets.xcassets */; };
 		B92CFEB72700D71C00BC46C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B92CFEB62700D71C00BC46C7 /* Preview Assets.xcassets */; };
 		B92CFEBA2700D71C00BC46C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B92CFEB82700D71C00BC46C7 /* LaunchScreen.storyboard */; };
@@ -21,6 +21,8 @@
 		B92CFEE92708CB5700BC46C7 /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92CFEE82708CB5700BC46C7 /* CustomOperators.swift */; };
 		B92CFEEB270A005D00BC46C7 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92CFEEA270A005D00BC46C7 /* CharacterModel.swift */; };
 		B978C07A2713168400DFC02D /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B978C0792713168400DFC02D /* ImageLoader.swift */; };
+		B978C07C271318E200DFC02D /* AsyncWebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B978C07B271318E200DFC02D /* AsyncWebImageView.swift */; };
+		B978C07E271619D100DFC02D /* SpinnerLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B978C07D271619D100DFC02D /* SpinnerLoading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +46,7 @@
 		B92CFEAA2700D71900BC46C7 /* RickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B92CFEAD2700D71900BC46C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B92CFEAF2700D71900BC46C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B92CFEB12700D71900BC46C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B92CFEB12700D71900BC46C7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B92CFEB32700D71C00BC46C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B92CFEB62700D71C00BC46C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B92CFEB92700D71C00BC46C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +63,8 @@
 		B92CFEE82708CB5700BC46C7 /* CustomOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperators.swift; sourceTree = "<group>"; };
 		B92CFEEA270A005D00BC46C7 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 		B978C0792713168400DFC02D /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		B978C07B271318E200DFC02D /* AsyncWebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncWebImageView.swift; sourceTree = "<group>"; };
+		B978C07D271619D100DFC02D /* SpinnerLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerLoading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +122,6 @@
 				B92CFEDD2700D76300BC46C7 /* View */,
 				B92CFEAD2700D71900BC46C7 /* AppDelegate.swift */,
 				B92CFEAF2700D71900BC46C7 /* SceneDelegate.swift */,
-				B92CFEB12700D71900BC46C7 /* ContentView.swift */,
 				B92CFEB32700D71C00BC46C7 /* Assets.xcassets */,
 				B92CFEB82700D71C00BC46C7 /* LaunchScreen.storyboard */,
 				B92CFEBB2700D71C00BC46C7 /* Info.plist */,
@@ -158,6 +161,8 @@
 			children = (
 				B92CFEE32700D88600BC46C7 /* CharacterView.swift */,
 				B978C0792713168400DFC02D /* ImageLoader.swift */,
+				B978C07B271318E200DFC02D /* AsyncWebImageView.swift */,
+				B978C07D271619D100DFC02D /* SpinnerLoading.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 		B92CFEE02700D78100BC46C7 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				B92CFEB12700D71900BC46C7 /* HomeView.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -327,11 +333,13 @@
 				B92CFEE22700D7F600BC46C7 /* Response.swift in Sources */,
 				B92CFEAE2700D71900BC46C7 /* AppDelegate.swift in Sources */,
 				B92CFEE42700D88600BC46C7 /* CharacterView.swift in Sources */,
+				B978C07E271619D100DFC02D /* SpinnerLoading.swift in Sources */,
 				B92CFEE62708C9AF00BC46C7 /* RequestCharacters.swift in Sources */,
 				B92CFEB02700D71900BC46C7 /* SceneDelegate.swift in Sources */,
 				B92CFEEB270A005D00BC46C7 /* CharacterModel.swift in Sources */,
+				B978C07C271318E200DFC02D /* AsyncWebImageView.swift in Sources */,
 				B978C07A2713168400DFC02D /* ImageLoader.swift in Sources */,
-				B92CFEB22700D71900BC46C7 /* ContentView.swift in Sources */,
+				B92CFEB22700D71900BC46C7 /* HomeView.swift in Sources */,
 				B92CFEE92708CB5700BC46C7 /* CustomOperators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
